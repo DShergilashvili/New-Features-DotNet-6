@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 public static class Program
 {
     static void WriteValue(Person instance)
