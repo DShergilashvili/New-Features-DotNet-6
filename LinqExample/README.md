@@ -90,4 +90,4 @@ public static TSource Max<TSource>(this IQueryable<TSource> source, IComparer<TS
 ```
 
 ## References
--<https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-linq-enhancements>
+<https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-linq-enhancements>
