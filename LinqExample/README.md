@@ -25,6 +25,7 @@ var first = new (string Name, int Age)[] { ("David", 31), ("Lasha", 30), ("Bondo
 var second = new (string Name, int Age)[] { ("Bidzina", 30), ("Irakli", 30), ("Giorgi", 33) };
 first.UnionBy(second, person => person.Age).Select(x => $"{x.Name}, {x.Age}"); // { ("David", 20), ("Lasha", 30), ("Bondo", 40), ("Giorgi", 33) }
 
+``` c#
 // MaxBy/MinBy
 var people = new (string Name, int Age)[] { ("Davida", 20), ("Lashuna", 30), ("Bondo", 40) };
 people.MaxBy(person => person.Age); ; // ("Bondo", 40)
@@ -35,7 +36,7 @@ people.MinBy(x => x.Name); // ("Bondo", 40)
 
 This function has been awaited for a long time. Simply put, it is to group a collection by BatchSize. After grouping, the number of elements in each small collection is at most BatchSize. Before we wrote an extension method to achieve it, we can use this extension method directly. Now, look at the following example to understand:
 
-
+``` c#
 var list = Enumerable.Range(1, 10).ToList();
 var chucks = list.Chunk(3);
 
@@ -46,6 +47,7 @@ var chucks = list.Chunk(3);
 
 For the extension methods `FirstOrDefault`/`LastOrDefault`/`SingleOrDefault`, in the previous version, we could not specify the default value. If we encounter Default, we will use the default value of the generic type. After NET 6, we can specify a default value, an example is as follows:
 
+``` c#
 Enumerable.Empty<int>().FirstOrDefault(-1);
 Enumerable.Empty<int>().SingleOrDefault(-1);
 Enumerable.Empty<int>().LastOrDefault(-1);
@@ -53,6 +55,7 @@ Enumerable.Empty<int>().LastOrDefault(-1);
 
 ## Zip enhancement
 
+``` c#
 var xs = Enumerable.Range(1, 5).ToArray();
 var ys = xs.Select(x => x.ToString());
 var zs = xs.Select(x => x% 2 == 0);
