@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "record struct", "record str
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "record_struct", "record_struct\record_struct.csproj", "{F7F3FF36-E144-416D-A99D-9C72D580FAA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManager", "ConfigurationManager\ConfigurationManager.csproj", "{5ABB53E4-4397-4F7A-BA59-5932CCC99181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationManager", "ConfigurationManager\ConfigurationManager.csproj", "{5ABB53E4-4397-4F7A-BA59-5932CCC99181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExample", "LinqExample\LinqExample.csproj", "{90BA90DD-5BDC-4138-8A3E-733EC9E70CD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{5ABB53E4-4397-4F7A-BA59-5932CCC99181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ABB53E4-4397-4F7A-BA59-5932CCC99181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ABB53E4-4397-4F7A-BA59-5932CCC99181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BA90DD-5BDC-4138-8A3E-733EC9E70CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BA90DD-5BDC-4138-8A3E-733EC9E70CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BA90DD-5BDC-4138-8A3E-733EC9E70CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BA90DD-5BDC-4138-8A3E-733EC9E70CD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
